@@ -1,0 +1,20 @@
+<div class="widgets-top">
+    <ul class="nav">
+        <a href="/"><li class="nav__item nav__item--active">首页</li></a>
+        <a href="/users/666"><li class="nav__item nav__item--active">用户页</li></a>
+        <a href="/test"><li class="nav__item nav__item--active">测试页</li></a>
+        <a href="/other"><li class="nav__item">容错处理页</li></a>
+    </ul>
+    <hr/>
+    <h3>服务端渲染的数据：</h3>
+    <p>DI贯穿的数据：[[DIdata]]</p>
+    <p>model层处理后的数据：[[serviceData]]</p>
+    <hr/>
+    <h3>vue 双向绑定小demo</h3>
+    <div id="app-5">
+        <p>vue渲染的数据：【{{ message }}】</p>
+        <button v-on:click="reverseMessage">逆转消息</button>
+        <p>cdn引入vue.js，然后就像用JQ一样耍了，不要被vue cli, .vue等束缚死了</p>
+        <p>“前端工程师，永远都不要被框架束缚死”~~大佬语录</p>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+
+:root{
+    --mainColor:#002835;
+    --fontColor:white;
+    --itemHeight:30px;
+    --itemWidth:80px;
+    --itemDisplay: inline-block;
+}
+
+:root{
+    --centered:{
+        display: var(--itemDisplay);
+        width: var(--itemWidth);
+        height: var(--itemHeight);
+        color: var(--fontColor);
+        text-align: center;
+        line-height: var(--itemHeight);
+    };
+}
+
+.widgets-top{
+    color: var(--fontColor);
+    background-color: var(--mainColor);
+
+    /* 开始书写bem css */
+    & .nav{
+        display: var(--itemDisplay);
+    }
+    & .nav__item{
+        @apply --centered;
+    }
+    & .nav__item--active{
+        background-color: #0087d9;
+    }
+}
+
+
+
